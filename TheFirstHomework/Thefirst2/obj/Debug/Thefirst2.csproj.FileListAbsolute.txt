@@ -1,0 +1,10 @@
+D:\csharptestwork\Thefirst2\bin\Debug\Thefirst2.exe.config
+D:\csharptestwork\Thefirst2\bin\Debug\Thefirst2.exe
+D:\csharptestwork\Thefirst2\bin\Debug\Thefirst2.pdb
+D:\csharptestwork\Thefirst2\obj\Debug\Thefirst2.csproj.AssemblyReference.cache
+D:\csharptestwork\Thefirst2\obj\Debug\Thefirst2.Form1.resources
+D:\csharptestwork\Thefirst2\obj\Debug\Thefirst2.Properties.Resources.resources
+D:\csharptestwork\Thefirst2\obj\Debug\Thefirst2.csproj.GenerateResource.cache
+D:\csharptestwork\Thefirst2\obj\Debug\Thefirst2.csproj.CoreCompileInputs.cache
+D:\csharptestwork\Thefirst2\obj\Debug\Thefirst2.exe
+D:\csharptestwork\Thefirst2\obj\Debug\Thefirst2.pdb
