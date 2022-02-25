@@ -1,5 +1,5 @@
 ﻿
-namespace Thefirst2
+namespace Homework1_2
 {
 	partial class Form1
 	{
