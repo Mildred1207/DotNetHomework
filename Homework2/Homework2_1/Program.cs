@@ -12,21 +12,25 @@ namespace Homework2_1
 		{
 			String s;
 			int a;
-			Console.Write("Please input an integer: ");
+			Console.Write("Please input an integer more than 2: ");
 			s = Console.ReadLine();
 			a = Convert.ToInt32(s);
-			putPrimNumber(a);
+			List<int> primNumber = new List<int>();
+			putPrimNumber(a,primNumber);
+			foreach(int i in primNumber)
+			{
+				Console.Write(i + " ");
+			}
 		}
 
-		static void putPrimNumber(int x)
+		static List<int> putPrimNumber(int x,List<int> primNumber)
 		{
 			List<int> hundredList = new List<int>();
 			getPrimNumber(hundredList,x);
 
 			if (x <= 1)
 			{
-				Console.WriteLine("This number doesn't prim facter!");
-				return;
+				throw new AccessViolationException("You should never enter a number less than 2!");
 			}
 
 			for(int i = 0; i < hundredList.Count;i++) 
@@ -35,13 +39,16 @@ namespace Homework2_1
 				while (x % n == 0)
 				{
 					x = x / n;
-					Console.Write("{0} ",n);
+					primNumber.Add(n);
 				}
 				if (x * x < n)
-					return;
+					break;
 			}
-
-			Console.Write(x);
+			if (x >= 2)
+			{
+				primNumber.Add(x);
+			}
+			return primNumber;
 		}
 
 		static void getPrimNumber(List<int> tmpList,int n)

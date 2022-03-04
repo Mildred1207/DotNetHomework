@@ -23,11 +23,14 @@ namespace Homework2_3
 			Console.WriteLine("");
 		}
 
-		static void Eratosthenes(List<int> tmpList)
+		static List<int> Eratosthenes(List<int> tmpList)
 		{
 			for (int i = 0; i < tmpList.Count;)
 			{
-				if (tmpList[i] % 2 == 0 || tmpList[i] % 3 == 0 || tmpList[i] % 5 == 0 || tmpList[i] % 7 == 0)
+				if ((tmpList[i] % 2 == 0 && tmpList[i]!=2)||
+					(tmpList[i] % 3 == 0 && tmpList[i] != 3 )|| 
+					(tmpList[i] % 5 == 0 && tmpList[i] != 5 )|| 
+					(tmpList[i] % 7 == 0 && tmpList[i] != 7))
 				{
 					tmpList.RemoveAt(i);
 				}
@@ -36,7 +39,7 @@ namespace Homework2_3
 					i++;
 				}
 			}
-			Console.Write("2 3 5 7 ");
+			return tmpList;
 		}
 	}
 }
