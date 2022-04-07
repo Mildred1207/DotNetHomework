@@ -26,18 +26,6 @@ namespace Homework7
 			InitializeComponent();
 		}
 
-		private void Form1_Paint(object sender, PaintEventArgs e)
-		{
-			graphics = e.Graphics;
-			per1 = Double.Parse(tb_per1.Text.ToString());
-			per2 = Double.Parse(tb_per2.Text.ToString());
-			th1 = Double.Parse(tb_th1.Text.ToString()) * Math.PI / 180;
-			th2 = Double.Parse(tb_th2.Text.ToString()) * Math.PI / 180;
-			height = Int32.Parse(tb_height.Text.ToString());
-			length = Int32.Parse(tb_leng.Text.ToString());
-			drawCayleyTree(height, panal_Caylay.Width, panal_Caylay.Height, length, -Math.PI / 2);
-		}
-
 		void drawCayleyTree(int n, double x0, double y0, double leng, double th)
 		{
 			if (n == 0) return;
@@ -59,7 +47,7 @@ namespace Homework7
 		private void btn_draw_Click(object sender, EventArgs e)
 		{
 			Form1 form1 = this;
-			form1.Paint += new PaintEventHandler(this.Form1_Paint);
+			form1.Paint += new PaintEventHandler(this.panal_Caylay_Paint);
 		}
 
 		private void btn_clear_Click(object sender, EventArgs e)
@@ -84,6 +72,18 @@ namespace Homework7
 					penColor = Pens.Green;
 					break;
 			}
+		}
+
+		private void panal_Caylay_Paint(object sender, PaintEventArgs e)
+		{
+			graphics = e.Graphics;
+			per1 = Double.Parse(tb_per1.Text.ToString());
+			per2 = Double.Parse(tb_per2.Text.ToString());
+			th1 = Double.Parse(tb_th1.Text.ToString()) * Math.PI / 180;
+			th2 = Double.Parse(tb_th2.Text.ToString()) * Math.PI / 180;
+			height = Int32.Parse(tb_height.Text.ToString());
+			length = Int32.Parse(tb_leng.Text.ToString());
+			drawCayleyTree(height, panal_Caylay.Width/2, panal_Caylay.Height, length, -Math.PI / 2);
 		}
 	}
 }

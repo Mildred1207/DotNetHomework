@@ -57,6 +57,7 @@ namespace Homework7
 			this.panal_Caylay.Name = "panal_Caylay";
 			this.panal_Caylay.Size = new System.Drawing.Size(873, 702);
 			this.panal_Caylay.TabIndex = 0;
+			this.panal_Caylay.Paint += new System.Windows.Forms.PaintEventHandler(this.panal_Caylay_Paint);
 			// 
 			// tableLayoutPanel1
 			// 
