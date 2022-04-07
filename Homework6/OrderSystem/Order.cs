@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Homework5
+namespace Homework6
 {
+	[Serializable]
 	public class Order
 	{
 		public int OrderId { get; set; }
@@ -17,6 +18,11 @@ namespace Homework5
 		public double SumValue
 		{
 			get => OrderDetails.Sum(d => d.Amount);
+		}
+
+		public Order()
+		{
+			this.OrderTime = 00000000;
 		}
 
 		public Order(int id,int otime,Client person)

@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Homework5
+namespace Homework6
 {
+	[Serializable]
 	public class Good
 	{
 		public int GoodId { get; set; }
@@ -23,7 +24,11 @@ namespace Homework5
 				goodValue = value;
 			}
 		}
+		
+		public Good()
+		{
 
+		}
 		public Good(int id,int value)
 		{
 			this.GoodId = id;

@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
-namespace Homework5
+namespace Homework6
 {
 	public class OrderService
 	{
 		//需要进行静态初始化
-		private List<Order> Order = new List<Order>();
+		private readonly List<Order> Order = new List<Order>();
 
 		public OrderService(){
 		}
@@ -95,6 +97,31 @@ namespace Homework5
 				return result;
 			}
 			throw new IndexOutOfRangeException("查找失败");
+		}
+
+		public void Export(String fileName)
+		{
+			XmlSerializer xz = new XmlSerializer(typeof(List<Order>));
+			using (FileStream fs = new FileStream(fileName, FileMode.Create))
+			{
+				xz.Serialize(fs, Order);
+			}
+		}
+
+		public void Import(String path)
+		{
+			XmlSerializer xz = new XmlSerializer(typeof(List<Order>));
+			using (FileStream fs = new FileStream(path, FileMode.Open))
+			{
+				List<Order> o = (List<Order>)xz.Deserialize(fs);
+				o.ForEach(order =>
+				{
+					if (!Order.Contains(order))
+					{
+						Order.Add(order);
+					}
+				});
+			}
 		}
 	}
 

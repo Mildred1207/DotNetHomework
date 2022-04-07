@@ -4,12 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Homework5
+namespace Homework6
 {
+	[Serializable]
 	public class Client
 	{
 		public string ClientName { get; set; }
 
+		public Client()
+		{
+
+		}
 		public Client(string name)
 		{
 			this.ClientName = name;

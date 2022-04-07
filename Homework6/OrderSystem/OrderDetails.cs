@@ -4,13 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Homework5
+namespace Homework6
 {
+	[Serializable]
 	public class OrderDetails
 	{
 		public Good Good { get; set; }
 		public int GoodNum { get; set; }
 
+		public OrderDetails()
+		{
+
+		}
 		public OrderDetails(Good g,int gn)
 		{
 			this.Good = g;
