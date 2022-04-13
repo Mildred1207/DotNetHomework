@@ -55,7 +55,7 @@ namespace Homework7
 			this.panal_Caylay.Dock = System.Windows.Forms.DockStyle.Left;
 			this.panal_Caylay.Location = new System.Drawing.Point(0, 0);
 			this.panal_Caylay.Name = "panal_Caylay";
-			this.panal_Caylay.Size = new System.Drawing.Size(873, 702);
+			this.panal_Caylay.Size = new System.Drawing.Size(873, 751);
 			this.panal_Caylay.TabIndex = 0;
 			this.panal_Caylay.Paint += new System.Windows.Forms.PaintEventHandler(this.panal_Caylay_Paint);
 			// 
@@ -92,13 +92,13 @@ namespace Homework7
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-			this.tableLayoutPanel1.Size = new System.Drawing.Size(417, 702);
+			this.tableLayoutPanel1.Size = new System.Drawing.Size(416, 751);
 			this.tableLayoutPanel1.TabIndex = 1;
 			// 
 			// btn_clear
 			// 
 			this.btn_clear.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.btn_clear.Location = new System.Drawing.Point(246, 635);
+			this.btn_clear.Location = new System.Drawing.Point(245, 681);
 			this.btn_clear.Name = "btn_clear";
 			this.btn_clear.Size = new System.Drawing.Size(133, 40);
 			this.btn_clear.TabIndex = 15;
@@ -109,7 +109,7 @@ namespace Homework7
 			// tb_th2
 			// 
 			this.tb_th2.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.tb_th2.Location = new System.Drawing.Point(224, 461);
+			this.tb_th2.Location = new System.Drawing.Point(223, 494);
 			this.tb_th2.Name = "tb_th2";
 			this.tb_th2.Size = new System.Drawing.Size(177, 35);
 			this.tb_th2.TabIndex = 12;
@@ -118,7 +118,7 @@ namespace Homework7
 			// tb_th1
 			// 
 			this.tb_th1.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.tb_th1.Location = new System.Drawing.Point(224, 374);
+			this.tb_th1.Location = new System.Drawing.Point(223, 401);
 			this.tb_th1.Name = "tb_th1";
 			this.tb_th1.Size = new System.Drawing.Size(177, 35);
 			this.tb_th1.TabIndex = 11;
@@ -127,7 +127,7 @@ namespace Homework7
 			// tb_per2
 			// 
 			this.tb_per2.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.tb_per2.Location = new System.Drawing.Point(224, 287);
+			this.tb_per2.Location = new System.Drawing.Point(223, 308);
 			this.tb_per2.Name = "tb_per2";
 			this.tb_per2.Size = new System.Drawing.Size(177, 35);
 			this.tb_per2.TabIndex = 10;
@@ -136,7 +136,7 @@ namespace Homework7
 			// tb_per1
 			// 
 			this.tb_per1.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.tb_per1.Location = new System.Drawing.Point(224, 200);
+			this.tb_per1.Location = new System.Drawing.Point(223, 215);
 			this.tb_per1.Name = "tb_per1";
 			this.tb_per1.Size = new System.Drawing.Size(177, 35);
 			this.tb_per1.TabIndex = 9;
@@ -145,7 +145,7 @@ namespace Homework7
 			// tb_leng
 			// 
 			this.tb_leng.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.tb_leng.Location = new System.Drawing.Point(224, 113);
+			this.tb_leng.Location = new System.Drawing.Point(223, 122);
 			this.tb_leng.Name = "tb_leng";
 			this.tb_leng.Size = new System.Drawing.Size(177, 35);
 			this.tb_leng.TabIndex = 8;
@@ -155,7 +155,7 @@ namespace Homework7
 			// 
 			this.lab_leng.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.lab_leng.AutoSize = true;
-			this.lab_leng.Location = new System.Drawing.Point(51, 118);
+			this.lab_leng.Location = new System.Drawing.Point(51, 127);
 			this.lab_leng.Name = "lab_leng";
 			this.lab_leng.Size = new System.Drawing.Size(106, 24);
 			this.lab_leng.TabIndex = 2;
@@ -165,7 +165,7 @@ namespace Homework7
 			// 
 			this.lab_height.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.lab_height.AutoSize = true;
-			this.lab_height.Location = new System.Drawing.Point(51, 31);
+			this.lab_height.Location = new System.Drawing.Point(51, 34);
 			this.lab_height.Name = "lab_height";
 			this.lab_height.Size = new System.Drawing.Size(106, 24);
 			this.lab_height.TabIndex = 0;
@@ -174,7 +174,7 @@ namespace Homework7
 			// tb_height
 			// 
 			this.tb_height.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.tb_height.Location = new System.Drawing.Point(224, 26);
+			this.tb_height.Location = new System.Drawing.Point(223, 29);
 			this.tb_height.Name = "tb_height";
 			this.tb_height.Size = new System.Drawing.Size(177, 35);
 			this.tb_height.TabIndex = 1;
@@ -184,7 +184,7 @@ namespace Homework7
 			// 
 			this.lab_per1.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.lab_per1.AutoSize = true;
-			this.lab_per1.Location = new System.Drawing.Point(27, 205);
+			this.lab_per1.Location = new System.Drawing.Point(27, 220);
 			this.lab_per1.Name = "lab_per1";
 			this.lab_per1.Size = new System.Drawing.Size(154, 24);
 			this.lab_per1.TabIndex = 3;
@@ -194,7 +194,7 @@ namespace Homework7
 			// 
 			this.lab_per2.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.lab_per2.AutoSize = true;
-			this.lab_per2.Location = new System.Drawing.Point(27, 292);
+			this.lab_per2.Location = new System.Drawing.Point(27, 313);
 			this.lab_per2.Name = "lab_per2";
 			this.lab_per2.Size = new System.Drawing.Size(154, 24);
 			this.lab_per2.TabIndex = 4;
@@ -204,7 +204,7 @@ namespace Homework7
 			// 
 			this.lab_th2.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.lab_th2.AutoSize = true;
-			this.lab_th2.Location = new System.Drawing.Point(39, 466);
+			this.lab_th2.Location = new System.Drawing.Point(39, 499);
 			this.lab_th2.Name = "lab_th2";
 			this.lab_th2.Size = new System.Drawing.Size(130, 24);
 			this.lab_th2.TabIndex = 5;
@@ -214,7 +214,7 @@ namespace Homework7
 			// 
 			this.lab_th1.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.lab_th1.AutoSize = true;
-			this.lab_th1.Location = new System.Drawing.Point(39, 379);
+			this.lab_th1.Location = new System.Drawing.Point(39, 406);
 			this.lab_th1.Name = "lab_th1";
 			this.lab_th1.Size = new System.Drawing.Size(130, 24);
 			this.lab_th1.TabIndex = 6;
@@ -224,7 +224,7 @@ namespace Homework7
 			// 
 			this.lab_pen.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.lab_pen.AutoSize = true;
-			this.lab_pen.Location = new System.Drawing.Point(51, 553);
+			this.lab_pen.Location = new System.Drawing.Point(51, 592);
 			this.lab_pen.Name = "lab_pen";
 			this.lab_pen.Size = new System.Drawing.Size(106, 24);
 			this.lab_pen.TabIndex = 7;
@@ -239,7 +239,7 @@ namespace Homework7
             "红色",
             "黄色",
             "绿色"});
-			this.cbox_pen.Location = new System.Drawing.Point(225, 549);
+			this.cbox_pen.Location = new System.Drawing.Point(225, 588);
 			this.cbox_pen.Name = "cbox_pen";
 			this.cbox_pen.Size = new System.Drawing.Size(174, 32);
 			this.cbox_pen.TabIndex = 13;
@@ -249,7 +249,7 @@ namespace Homework7
 			// btn_draw
 			// 
 			this.btn_draw.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.btn_draw.Location = new System.Drawing.Point(37, 635);
+			this.btn_draw.Location = new System.Drawing.Point(37, 681);
 			this.btn_draw.Name = "btn_draw";
 			this.btn_draw.Size = new System.Drawing.Size(133, 40);
 			this.btn_draw.TabIndex = 14;
@@ -261,7 +261,7 @@ namespace Homework7
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1290, 702);
+			this.ClientSize = new System.Drawing.Size(1289, 751);
 			this.Controls.Add(this.tableLayoutPanel1);
 			this.Controls.Add(this.panal_Caylay);
 			this.Name = "Form1";
