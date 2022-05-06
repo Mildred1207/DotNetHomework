@@ -47,14 +47,14 @@ namespace OrderServiceWinForm
 			this.sumValueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.orderBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.daGri_details = new System.Windows.Forms.DataGridView();
-			this.goodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.goodNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.orderDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
 			this.bindSour_order = new System.Windows.Forms.BindingSource(this.components);
 			this.bindSour_details = new System.Windows.Forms.BindingSource(this.components);
 			this.openFile_port = new System.Windows.Forms.OpenFileDialog();
+			this.goodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.goodNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.daGri_order)).BeginInit();
@@ -267,6 +267,29 @@ namespace OrderServiceWinForm
 			this.daGri_details.Size = new System.Drawing.Size(586, 561);
 			this.daGri_details.TabIndex = 3;
 			// 
+			// orderDetailsBindingSource
+			// 
+			this.orderDetailsBindingSource.DataMember = "OrderDetails";
+			this.orderDetailsBindingSource.DataSource = this.orderBindingSource;
+			// 
+			// fileSystemWatcher1
+			// 
+			this.fileSystemWatcher1.EnableRaisingEvents = true;
+			this.fileSystemWatcher1.SynchronizingObject = this;
+			// 
+			// bindSour_order
+			// 
+			this.bindSour_order.DataSource = typeof(Homework6.Order);
+			// 
+			// bindSour_details
+			// 
+			this.bindSour_details.DataSource = typeof(Homework6.OrderDetails);
+			// 
+			// openFile_port
+			// 
+			this.openFile_port.DereferenceLinks = false;
+			this.openFile_port.Filter = "XML 文件|*.xml";
+			// 
 			// goodDataGridViewTextBoxColumn
 			// 
 			this.goodDataGridViewTextBoxColumn.DataPropertyName = "Good";
@@ -291,28 +314,6 @@ namespace OrderServiceWinForm
 			this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
 			this.amountDataGridViewTextBoxColumn.ReadOnly = true;
 			this.amountDataGridViewTextBoxColumn.Width = 200;
-			// 
-			// orderDetailsBindingSource
-			// 
-			this.orderDetailsBindingSource.DataSource = typeof(Homework6.OrderDetails);
-			// 
-			// fileSystemWatcher1
-			// 
-			this.fileSystemWatcher1.EnableRaisingEvents = true;
-			this.fileSystemWatcher1.SynchronizingObject = this;
-			// 
-			// bindSour_order
-			// 
-			this.bindSour_order.DataMember = "OrderDetails";
-			this.bindSour_order.DataSource = typeof(Homework6.Order);
-			// 
-			// bindSour_details
-			// 
-			this.bindSour_details.DataSource = typeof(Homework6.OrderDetails);
-			// 
-			// openFile_port
-			// 
-			this.openFile_port.Filter = "XML 文件|*.xml";
 			// 
 			// Form1
 			// 
@@ -359,14 +360,14 @@ namespace OrderServiceWinForm
 		private System.Windows.Forms.DataGridViewTextBoxColumn clientDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn sumValueDataGridViewTextBoxColumn;
 		private System.Windows.Forms.BindingSource orderBindingSource;
-		private System.Windows.Forms.DataGridViewTextBoxColumn goodDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn goodNumDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn amountDataGridViewTextBoxColumn;
 		private System.Windows.Forms.BindingSource orderDetailsBindingSource;
 		private System.Windows.Forms.BindingSource bindSour_order;
 		private System.Windows.Forms.BindingSource bindSour_details;
 		private System.IO.FileSystemWatcher fileSystemWatcher1;
 		private System.Windows.Forms.OpenFileDialog openFile_port;
+		private System.Windows.Forms.DataGridViewTextBoxColumn goodDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn goodNumDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn amountDataGridViewTextBoxColumn;
 	}
 }
 

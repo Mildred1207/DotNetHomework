@@ -45,10 +45,12 @@ namespace OrderServiceWinForm
 			this.tb_goodSum = new System.Windows.Forms.TextBox();
 			this.btn_AddGood = new System.Windows.Forms.Button();
 			this.btn_addOrder = new System.Windows.Forms.Button();
+			this.orderBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.tableLayoutPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.bindSour_cdetails)).BeginInit();
 			this.tableLayoutPanel2.SuspendLayout();
 			this.tableLayoutPanel3.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// tableLayoutPanel1
@@ -85,6 +87,7 @@ namespace OrderServiceWinForm
 			// tb_time
 			// 
 			this.tb_time.Anchor = System.Windows.Forms.AnchorStyles.Left;
+			this.tb_time.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.orderBindingSource, "OrderTime", true));
 			this.tb_time.Location = new System.Drawing.Point(704, 56);
 			this.tb_time.Name = "tb_time";
 			this.tb_time.Size = new System.Drawing.Size(281, 35);
@@ -114,6 +117,7 @@ namespace OrderServiceWinForm
 			// tb_id
 			// 
 			this.tb_id.Anchor = System.Windows.Forms.AnchorStyles.Left;
+			this.tb_id.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.orderBindingSource, "OrderId", true));
 			this.tb_id.Location = new System.Drawing.Point(704, 7);
 			this.tb_id.Name = "tb_id";
 			this.tb_id.Size = new System.Drawing.Size(281, 35);
@@ -123,11 +127,12 @@ namespace OrderServiceWinForm
 			// tb_clientname
 			// 
 			this.tb_clientname.Anchor = System.Windows.Forms.AnchorStyles.Left;
+			this.tb_clientname.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.orderBindingSource, "Client", true));
 			this.tb_clientname.Location = new System.Drawing.Point(704, 105);
 			this.tb_clientname.Name = "tb_clientname";
 			this.tb_clientname.Size = new System.Drawing.Size(281, 35);
 			this.tb_clientname.TabIndex = 6;
-			this.tb_clientname.Text = "wyy";
+			this.tb_clientname.Text = "client1";
 			// 
 			// bindSour_cdetails
 			// 
@@ -155,6 +160,7 @@ namespace OrderServiceWinForm
 			// cobox_good
 			// 
 			this.cobox_good.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.cobox_good.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindSour_cdetails, "Good", true));
 			this.cobox_good.FormattingEnabled = true;
 			this.cobox_good.Items.AddRange(new object[] {
             "good1",
@@ -194,6 +200,7 @@ namespace OrderServiceWinForm
 			// tb_goodSum
 			// 
 			this.tb_goodSum.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.tb_goodSum.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindSour_cdetails, "GoodNum", true));
 			this.tb_goodSum.Location = new System.Drawing.Point(976, 64);
 			this.tb_goodSum.Name = "tb_goodSum";
 			this.tb_goodSum.Size = new System.Drawing.Size(141, 35);
@@ -222,6 +229,10 @@ namespace OrderServiceWinForm
 			this.btn_addOrder.UseVisualStyleBackColor = true;
 			this.btn_addOrder.Click += new System.EventHandler(this.btn_addOrder_Click);
 			// 
+			// orderBindingSource
+			// 
+			this.orderBindingSource.DataSource = typeof(Homework6.Order);
+			// 
 			// Form2
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
@@ -237,6 +248,7 @@ namespace OrderServiceWinForm
 			this.tableLayoutPanel2.ResumeLayout(false);
 			this.tableLayoutPanel3.ResumeLayout(false);
 			this.tableLayoutPanel3.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -258,5 +270,6 @@ namespace OrderServiceWinForm
 		private System.Windows.Forms.TextBox tb_goodSum;
 		private System.Windows.Forms.Button btn_AddGood;
 		private System.Windows.Forms.Button btn_addOrder;
+		private System.Windows.Forms.BindingSource orderBindingSource;
 	}
 }

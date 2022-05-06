@@ -49,6 +49,7 @@ namespace OrderServiceWinForm
 					orderBindingSource.DataSource = newOrders;
 					break;
 			}
+			orderBindingSource.ResetBindings(false);//强制刷新，如果对象没变就置false
 		}
 
 		public int Id1 { get; set; }
@@ -82,6 +83,7 @@ namespace OrderServiceWinForm
 			}
 		}
 
+		//删除订单要有提示，这是危险操作
 		private void btn_delete_Click(object sender, EventArgs e)
 		{
 			Order DeleteOrder = (Order)orderBindingSource.Current;
@@ -96,6 +98,7 @@ namespace OrderServiceWinForm
 			orderService.AddOrder(form2.NewOrder);
 		}
 
+		//修改订单要把订单传进去
 		private void btn_change_Click(object sender, EventArgs e)
 		{
 			Form2 form2 = new Form2();

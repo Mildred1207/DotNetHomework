@@ -60,6 +60,7 @@ namespace OrderServiceWinForm
 			newOrder.AddDetails(newOrderDetails);
 		}
 
+		//通过事件的机制达到主次窗体间的切换
 		private void btn_addOrder_Click(object sender, EventArgs e)
 		{
 			Close();
